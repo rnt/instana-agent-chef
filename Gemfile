@@ -3,8 +3,8 @@
 source 'https://rubygems.org'
 
 gem 'chef'
-gem 'rubocop'
-gem 'rake'
 gem 'foodcritic'
+gem 'rake'
 gem 'rspec'
+gem 'rubocop'
 gem 'stove'

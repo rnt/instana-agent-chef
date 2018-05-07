@@ -15,43 +15,43 @@
 # required sensors on startup phase.
 # Possible values: "static" | "dynamic".
 # See:: https://docs.instana.io/quick_start/agent_setup/linux/#whats-in-it
-node.default['instana']['agent']['flavor'] = Instana::data('flavor', 'general') || 'static'
+node.default['instana']['agent']['flavor'] = Instana.data('flavor', 'general') || 'static'
 
 # When you register with us you receive a string that makes the credentials you
 # need in order to download the agent and its sensors. It can be seen as a
 # tenantcy identifier across the platform.
 # See:: https://docs.instana.io/quick_start/agent_setup/linux/#manual-installation-process
-node.default['instana']['agent']['key'] = Instana::data('key', 'general') || ''
+node.default['instana']['agent']['key'] = Instana.data('key', 'general') || ''
 
 # This is the machine the Instana agent will connect to directly. This will
 # either be one of our SaaS endpoints, or your Instana on premises installation
 # hostname or address.
 # See:: https://docs.instana.io/quick_start/agent_setup/linux/#agent-communication
-node.default['instana']['agent']['endpoint']['host'] = Instana::data('endpoint_host', 'general') ||
-  'saas-us-west-2.instana.io'
+node.default['instana']['agent']['endpoint']['host'] = Instana.data('endpoint_host', 'general') ||
+                                                       'saas-us-west-2.instana.io'
 
 # See node['instana']['agent']['endpoint']['host']. On our SaaS platform, the
 # monitoring endpoint port is 443. For most on premises installations, this
 # number is 1444.
 # See:: https://docs.instana.io/quick_start/agent_setup/linux/#agent-communication
-node.default['instana']['agent']['endpoint']['port'] = Instana::data('endpoint_port', 'general') || 443
+node.default['instana']['agent']['endpoint']['port'] = Instana.data('endpoint_port', 'general') || 443
 
 # This mode specifies the mode under which the Instana agent should run.
 # Possible values are "apm", "infrastructure" and "off".
 # See:: https://docs.instana.io/quick_start/agent_configuration/#agent-mode
-node.default['instana']['agent']['mode'] = Instana::data('mode', 'general') || 'apm'
+node.default['instana']['agent']['mode'] = Instana.data('mode', 'general') || 'apm'
 
 # The agent zone is a visual helper under which hosts are being categorized
 # on the physical map. This, along with the list of host tags, can help filter
 # and search.
 # Possible values: a string containing UTF-8 characters.
 # See:: https://docs.instana.io/quick_start/agent_configuration/#custom-zones
-node.default['instana']['agent']['zone'] = Instana::data('zone', 'general') || ''
+node.default['instana']['agent']['zone'] = Instana.data('zone', 'general') || ''
 
 # The agent tags are a list of strings that will categorize the host machine
 # and are. This, along with the list of host tags, can help filter and search.
 # See:: https://docs.instana.io/quick_start/agent_configuration/#tags
-node.default['instana']['agent']['tags'] = Instana::data('tags', 'general') || []
+node.default['instana']['agent']['tags'] = Instana.data('tags', 'general') || []
 
 # The Instana agent updates its set of sensors automatically in the background
 # unless configured differently.
