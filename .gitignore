@@ -1,5 +1,4 @@
 .kitchen/
-.kitchen.yml
 Gemfile.lock
 .idea/
 .kitchen.local.yml
@@ -24,3 +23,4 @@ test/version_tmp
 tmp
 .rspec
 vendor/
+Berksfile.lock

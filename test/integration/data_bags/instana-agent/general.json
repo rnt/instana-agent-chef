@@ -1,0 +1,10 @@
+{
+  "id": "general",
+  "flavor": "dynamic",
+  "key": "WRITE YOUR KEY HERE",
+  "endpoint_host": "saas-us-west-2.instana.io",
+  "endpoint_port": 443,
+  "mode": "APM",
+  "zone": "production",
+  "tags": ["databagtag", "databagtag2"]
+}
