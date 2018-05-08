@@ -12,5 +12,5 @@ class Instana
     Chef::DataBag.list.include?(databag) && data_bag(databag).include?(item)
   end
 
-  private_class_method :item_in_data_bag
+  private_class_method :item_in_data_bag?
 end
